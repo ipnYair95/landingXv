@@ -1,0 +1,17 @@
+ 
+
+#about *{
+	text-align: center;
+}
+
+.carousel-item img{
+	width: 500px;
+	height: 300px;
+}
+
+@media (min-width: 1000px) {
+    .carousel-item img{
+        width: 800px;
+        height: 500px;
+    }
+}

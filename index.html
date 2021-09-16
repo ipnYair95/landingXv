@@ -1,12 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estrellas.css">
+    <link rel="stylesheet" href="fotos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/00dc08dadd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+
+
 </head>
+
 <body>
-    ssss
+
+    <audio controls autoplay style="display: none;">
+        <source src="assets/try.mp3" type="audio/ogg"> 
+    </audio>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> Te invito a... </a>
+                <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link" href="#fotos">Fotos</a>
+                        <a class="nav-link" href="#dedicatoria">Dedicatoria</a>
+                        <a class="nav-link" href="#map">Mapa</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section id="home">
+
+
+        <div class="contenedor animate__animated animate__backInUp" style="text-align: center;">
+            <h1 class="textBeauty"> Mis XV años </h1>
+            <div class="imagen">
+                <img id="corona" src="assets/corona.png" alt="">
+
+            </div>
+
+
+            <div class="row" style="text-align: center;">
+                <hr>
+                <h1 class="textBeauty"> Patita </h1>
+                <hr>
+                <h2>
+                    <i class="fas fa-dove "></i>
+                    <span id="fecha"> hola </span>
+                    <i class="fas fa-dove "></i>
+                </h2>
+            </div>
+
+
+
+            <div class="reloj">
+
+
+                <div class="tarjeta">
+                    <p>D</p>
+                    <p id="dias">-</p>
+                </div>
+
+                <div class="tarjeta">
+                    <p>H</p>
+                    <p id="horas">-</p>
+                </div>
+
+                <div class="tarjeta">
+                    <p>M</p>
+                    <p id="minutos">-</p>
+                </div>
+
+                <div class="tarjeta">
+                    <p>S</p>
+                    <p id="segundos">-</p>
+                </div>
+
+
+            </div>
+
+
+            <div id="estrellas">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+
+            </div>
+
+            <div class="row mt-4 mb-4" style="text-align: center;">
+                <h2>
+                    <i class="fa fa-heart"></i>
+
+                    <a href="#fotos">
+                        <button class="btn btn-primary" style="border-radius: 10px; font-size: 25px;">
+                            Acompañame
+                        </button>
+                    </a>
+
+                    <i class="fa fa-heart"></i>
+                </h2>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <section id="fotos" class="mt-5 mb-5">
+
+
+        <div class="row">
+            <h2>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <span>Fotos</span>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+            </h2>
+        </div>
+
+        <hr>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/car1.jpg" d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/car2.jpg" d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/car3.jpg" d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <br>
+    </section>
+
+    <section id="dedicatoria">
+        <div class="row">
+            <h2>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <span> Dedicatoria... </span>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="assets/pose1.jpg" alt="">
+            </div>
+            <div class="col" style="text-align: justify;">
+                <h2> A mis padres y amigos </h2>
+                <br>
+                <h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eveniet cupiditate, dolores
+                    voluptates corrupti facere necessitatibus repellat magnam, maxime voluptatibus rem dignissimos,
+                    suscipit quaerat ad! Quod hic nostrum alias exercitationem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi delectus ea non dolor, impedit fugiat
+                    a et deserunt voluptatem ut doloremque, illo animi fugit alias. Nam quae commodi ad error.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quam, at nihil placeat autem
+                    repellendus cum aperiam consequatur rerum voluptates nam provident odio earum? Facere possimus
+                    laudantium dolorem quia ea!
+                </h3>
+                <br>
+                <h3 style="text-align: right;"> <b> - Atentamente: Lorem </b> </h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="map" style="text-align: center;">
+        <div class="row">
+            <h2>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <span>¿Cómo llegar?</span>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+            </h2>
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">divi
+                    discount</a><br>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 500px;
+                        width: 600px;
+                    }
+                </style><a href="https://www.embedgooglemap.net">embed google maps in website</a>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 500px;
+                        width: 600px;
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="script.js">
+
+    </script>
+
+
 </body>
+
 </html>
