@@ -3,7 +3,7 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: "Sofia", sans-serif !important;
-	position: relative; 
+	position: relative;
 	overflow-x: hidden;
 }
 
@@ -20,7 +20,7 @@ header {
 	background: url(assets/xv.jpg) no-repeat center center fixed;
 	background-size: cover;
 	background-position: 70%;
-	width: 100vw; 
+	width: 100vw;
 	height: 100vh;
 	opacity: 0.9;
 	margin-top: 0px;
@@ -93,16 +93,16 @@ h1 {
 	animation: ani-card 2s linear infinite;
 }
 
-.row span{
+.row span {
 	color: #fff;
 	-webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000000;
-    font-size: 100px;
-	font-family: 'Cookie';
+	-webkit-text-stroke-color: #000000;
+	font-size: 100px;
+	font-family: "Cookie";
 	text-shadow: 6px 1px 10px rgb(66 191 63);
 }
 
-section{
+section {
 	background: rgb(251 231 255);
 	display: flex;
 	justify-content: center;
@@ -113,7 +113,7 @@ section{
 	padding: 10px;
 }
 
-.col{
+.col {
 	text-align: center;
 }
 
@@ -141,36 +141,36 @@ section{
 	height: auto;
 }
 
+.mapouter{
+	overflow-x: auto !important;
+}
 
-.textBeauty{
+.textBeauty {
 	font-size: 140px;
-    letter-spacing: 0.1em;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 3px;
-    /* -webkit-text-stroke-color: #8e2fd6; */
-    text-shadow: 6px 1px 10px rgb(22 72 196);
-  }
-  
- 
+	letter-spacing: 0.1em;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+	/* -webkit-text-stroke-color: #8e2fd6; */
+	text-shadow: 6px 1px 10px rgb(22 72 196);
+}
 
 @media (max-width: 990px) {
 	.navbar {
 		background: rgb(95 121 213 / 30%);
 	}
-	body,html{
+	body,
+	html {
 		overflow: auto;
 	}
 
-	#home{
+	#home {
 		height: auto;
 	}
 
 	.reloj .tarjeta {
-	 
 		font-size: 20px;
 		width: 150px;
 		height: 150px;
-		 
 	}
 }
 
@@ -181,10 +181,20 @@ section{
 		align-items: center;
 	}
 
-	.textBeauty{
+	.textBeauty {
 		font-size: 60px;
 	}
 
-	
-}
+	.row span {
+		color: #fff;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #000000;
+		font-size: 50px;
+		font-family: "Cookie";
+		text-shadow: 6px 1px 10px rgb(66 191 63);
+	}
 
+	#face{
+		width: 240px;
+	}
+}
