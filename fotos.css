@@ -9,6 +9,34 @@
 	height: 300px;
 }
 
+.foto-fam{
+    width: 600px;
+    height: 500px;
+    background: 
+    repeating-linear-gradient( 0deg, #fff 0%, #fff 50%,
+    #000 50%, #000 100% ),
+    repeating-linear-gradient( 90deg, #fff 0%, #fff 50%,
+    #000 50%, #000 100% );
+    background-size: 30px 30px;
+    background-blend-mode: difference;
+}
+
+.foto-fam{
+    position: relative;
+}
+
+.foto-fam span{
+    display: block;
+    position: absolute; 
+    width: 50px;
+    height: 50px;
+    background: url(assets/xv.jpg) no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    pointer-events: none;
+}
+
 @media (min-width: 1000px) {
     .carousel-item img{
         width: 800px;

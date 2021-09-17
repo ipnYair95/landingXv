@@ -154,6 +154,14 @@ section {
 	text-shadow: 6px 1px 10px rgb(22 72 196);
 }
 
+/* Set the size of the div element that contains the map */
+#mapaCanvas {
+	padding: 50px;
+	width: 80vw;
+	height: 400px;
+	/* The width is the width of the web page */
+  }
+
 @media (max-width: 990px) {
 	.navbar {
 		background: rgb(95 121 213 / 30%);

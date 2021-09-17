@@ -43,6 +43,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" href="#home">Home</a>
                         <a class="nav-link" href="#fotos">Fotos</a>
+                        <a class="nav-link" href="#personas">Personas</a>
                         <a class="nav-link" href="#dedicatoria">Dedicatoria</a>
                         <a class="nav-link" href="#map">Mapa</a>
                     </div>
@@ -214,6 +215,25 @@
         </div>
     </section>
 
+    <section id="personas">
+
+        <div class="row">
+            <h2>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <span> Mis padres... </span>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="foto-fam">
+
+                </div>
+            </div>            
+        </div>        
+    </section>
+
 
     <section id="map" style="text-align: center;">
         <div class="row">
@@ -222,6 +242,16 @@
                 <span>¿Cómo llegar?</span>
                 <i class="fa fa-heart" aria-hidden="true"></i>
             </h2>
+        </div>
+        <div class="row">
+            <ul>
+                <li> <h2><b> <i class="fa fa-birthday-cake" aria-hidden="true"> Salón: </i> </b> Punta Azul </h2> </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div id="mapaCanvas">
+
+            </div>
         </div>
 
         <!-- <div class="mapouter">
@@ -256,6 +286,9 @@
     <script src="script.js">
 
     </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR3KOZx-nOPdy3VQhRiiQZmhXfBe-FuFw&callback=initMap&libraries=&v=weekly"
+        async></script>
 
 
 </body>
