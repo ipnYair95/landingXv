@@ -1,8 +1,9 @@
+let mapBox = "pk.eyJ1IjoieWFpcm1hcmluIiwiYSI6ImNrcWd6dng1MTAxZjczMW82NWZnMXU4cHcifQ.f3P_TnpOup9u-1u2Ime2Og";
 
 let fecha = {
   anio: 2021,
   mes: "Sep",
-  dia: 16,
+  dia: 20,
   hora: "22:30:00"
 }
 
@@ -46,63 +47,32 @@ const countdown = () => {
 // Initialize and add the map
 function initMap() {
   try {
-    // The location of Uluru
-    const uluru = { lat: 19.2674854, lng: -98.8823232 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("mapaCanvas"), {
-      zoom: 20,
-      center: uluru,
+
+    mapboxgl.accessToken = mapBox;
+    const map = new mapboxgl.Map({
+      container: 'mapaCanvas', // container ID
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [-98.8821499, 19.2674231], // starting position [lng, lat]
+      zoom: 15 // starting zoom
     });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
+
+    const marker = new mapboxgl.Marker()
+      .setLngLat([-98.8821499, 19.2674231])
+      .addTo(map);
+
   } catch (error) {
 
   }
 }
 
-function initRascados() {
-  document.querySelector('.foto-fam').addEventListener('mousemove', (e) => {
-    const body = document.querySelector('.foto-fam');
-    const bubbles = document.createElement('span');
 
-    //console.log(e.offsetX,e.offsetY);
-
-    if (e.offsetX < 550 && e.offsetY < 450) {
-      bubbles.style.left = e.offsetX + 'px';
-      bubbles.style.top = e.offsetY + 'px';
-
-      body.appendChild(bubbles);
-    }
-
-  });
-}
-
-/* function setup() {
-  let mycanvas = createCanvas(350,350);
-  mycanvas.parent('padre');
-
-  //let mycanvas2 = createCanvas(350,350);
-  //mycanvas2.parent('madre');
-}
-
-function draw() {
-
-  strokeWeight(50);
-  if( mouseIsPressed){
-    line(mouseX,mouseY,pmouseX,pmouseY);
-  }
-
-} */
 
 const padre = (sketch) => {
 
 
   sketch.setup = () => {
-    let m = sketch.createCanvas(350, 350);
-    m.parent('padre'); 
+    let m = sketch.createCanvas(320, 320);
+    m.parent('padre');
   };
 
   sketch.draw = () => {
@@ -117,8 +87,24 @@ const madre = (sketch) => {
 
 
   sketch.setup = () => {
-    let m = sketch.createCanvas(350, 350);
-    m.parent('madre'); 
+    let m = sketch.createCanvas(320, 320);
+    m.parent('madre');
+  };
+
+  sketch.draw = () => {
+    sketch.strokeWeight(50);
+    if (sketch.mouseIsPressed) {
+      sketch.line(sketch.mouseX, sketch.mouseY, sketch.pmouseX, sketch.pmouseY);
+    }
+  };
+};
+
+const padrinos = (sketch) => {
+
+
+  sketch.setup = () => {
+    let m = sketch.createCanvas(320, 320);
+    m.parent('padrinos');
   };
 
   sketch.draw = () => {
@@ -132,6 +118,7 @@ const madre = (sketch) => {
 
 new p5(padre);
 new p5(madre);
+new p5(padrinos);
 
 
 
