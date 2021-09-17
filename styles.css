@@ -51,6 +51,7 @@ header {
 .navbar a {
 	color: rgb(86, 233, 27);
 	font-size: xx-large;
+	font-family: 'Cookie';
 }
 
 .contenedor {
@@ -86,8 +87,8 @@ h1 {
 	font-size: 30px;
 
 	padding: 2px;
-	width: 200px;
-	height: 200px;
+	width: 170px;
+	height: 160px;
 	word-wrap: break-word;
 
 	display: flex;
@@ -120,8 +121,7 @@ section {
 	margin: 10px;
 	padding: 10px;
 	padding-bottom: 50px;	 
-	border-radius: 10px;
-	border: 4px dotted #00ff3e
+	border-radius: 10px; 
 }
 
 .col {
