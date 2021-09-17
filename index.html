@@ -29,7 +29,7 @@
         <source src="assets/try.mp3" type="audio/ogg"> 
     </audio> -->
 
-
+    
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -226,11 +226,24 @@
         </div>
 
         <div class="row">
-            <div class="col">
-                <div class="foto-fam">
-
+            
+            <div class="flex-container">
+                <div id="padre" class="foto-fam">
+                    <img src="assets/familia/padre.jpg" alt="">
+                    <div class="foto-body mt-2">
+                        <h3 class="">  Mi padre  </h3>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dolor, maxime quas magni consequatur commodi impedit. Impedit architecto dolores maiores culpa ex tempore consectetur! Aut molestias nesciunt voluptatum veritatis eaque? </p>
+                    </div>
                 </div>
-            </div>            
+                <div id="madre" class="foto-fam">
+                    <img src="assets/familia/madre.jpg" alt="">
+                    <div class="foto-body mt-2">
+                        <h3 class="">  Mi padre  </h3>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dolor, maxime quas magni consequatur commodi impedit. Impedit architecto dolores maiores culpa ex tempore consectetur! Aut molestias nesciunt voluptatum veritatis eaque? </p>
+                    </div>
+                </div>
+            </div>
+
         </div>        
     </section>
 
@@ -253,42 +266,22 @@
 
             </div>
         </div>
-
-        <!-- <div class="mapouter">
-            <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                    href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">divi
-                    discount</a><br>
-                <style>
-                    .mapouter {
-                        position: relative;
-                        text-align: right;
-                        height: 350px;
-                        width: 150px;
-                    }
-                </style><a href="https://www.embedgooglemap.net">embed google maps in website</a>
-                <style>
-                    .gmap_canvas {
-                        overflow: hidden;
-                        background: none !important;
-                        height: 350px;
-                        width: 150px;
-                    }
-                </style>
-            </div>
-        </div> -->
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-    <script src="script.js">
-
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR3KOZx-nOPdy3VQhRiiQZmhXfBe-FuFw&callback=initMap&libraries=&v=weekly"
+        
+    
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR3KOZx-nOPdy3VQhRiiQZmhXfBe-FuFw&callback=initMap&libraries=&v=weekly"
         async></script>
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js'></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+
+ <script src="script.js">
+</script>
 
 
 </body>

@@ -1,5 +1,4 @@
 
-
 let fecha = {
   anio: 2021,
   mes: "Sep",
@@ -60,30 +59,84 @@ function initMap() {
       map: map,
     });
   } catch (error) {
-    
+
   }
 }
 
 function initRascados() {
   document.querySelector('.foto-fam').addEventListener('mousemove', (e) => {
-    const body = document.querySelector('.foto-fam');    
+    const body = document.querySelector('.foto-fam');
     const bubbles = document.createElement('span');
 
     //console.log(e.offsetX,e.offsetY);
 
-    if( e.offsetX < 550 && e.offsetY < 450 ){
+    if (e.offsetX < 550 && e.offsetY < 450) {
       bubbles.style.left = e.offsetX + 'px';
       bubbles.style.top = e.offsetY + 'px';
-  
+
       body.appendChild(bubbles);
     }
 
   });
 }
 
+/* function setup() {
+  let mycanvas = createCanvas(350,350);
+  mycanvas.parent('padre');
+
+  //let mycanvas2 = createCanvas(350,350);
+  //mycanvas2.parent('madre');
+}
+
+function draw() {
+
+  strokeWeight(50);
+  if( mouseIsPressed){
+    line(mouseX,mouseY,pmouseX,pmouseY);
+  }
+
+} */
+
+const padre = (sketch) => {
+
+
+  sketch.setup = () => {
+    let m = sketch.createCanvas(350, 350);
+    m.parent('padre'); 
+  };
+
+  sketch.draw = () => {
+    sketch.strokeWeight(50);
+    if (sketch.mouseIsPressed) {
+      sketch.line(sketch.mouseX, sketch.mouseY, sketch.pmouseX, sketch.pmouseY);
+    }
+  };
+};
+
+const madre = (sketch) => {
+
+
+  sketch.setup = () => {
+    let m = sketch.createCanvas(350, 350);
+    m.parent('madre'); 
+  };
+
+  sketch.draw = () => {
+    sketch.strokeWeight(50);
+    if (sketch.mouseIsPressed) {
+      sketch.line(sketch.mouseX, sketch.mouseY, sketch.pmouseX, sketch.pmouseY);
+    }
+  };
+};
+
+
+new p5(padre);
+new p5(madre);
+
+
+
 document.getElementById("fecha").innerHTML = ` ${fecha.dia + "/" + fecha.mes + "/" + fecha.anio + " a las " + fecha.hora} `;
 initMap();
-initRascados();
 countdown();
 
 
