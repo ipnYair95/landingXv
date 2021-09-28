@@ -2,7 +2,7 @@ let mapBox = "pk.eyJ1IjoieWFpcm1hcmluIiwiYSI6ImNrcWd6dng1MTAxZjczMW82NWZnMXU4cHc
 
 let fecha = {
   anio: 2021,
-  mes: "Sep",
+  mes: "Dec",
   dia: 20,
   hora: "22:30:00"
 }
