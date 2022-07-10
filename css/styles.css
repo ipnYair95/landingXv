@@ -8,9 +8,22 @@ body {
 	background: #000 !important; 
 }
 
+
  
 :root{
 	--color: #d29bfd ;
+}
+
+.container-fluid{
+	background: rgb(210 155 253 / 50%) !important;
+    margin-top: -8px !important;
+}
+.navbar{
+	background: none !important;
+}
+
+.nav-link:hover{
+	color: yellow !important;
 }
 
 .row {
