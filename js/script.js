@@ -1,10 +1,10 @@
 let mapBox = "pk.eyJ1IjoieWFpcm1hcmluIiwiYSI6ImNrcWd6dng1MTAxZjczMW82NWZnMXU4cHcifQ.f3P_TnpOup9u-1u2Ime2Og";
 
 let fecha = {
-  anio: 2021,
-  mes: "Dec",
-  dia: 20,
-  hora: "22:30:00"
+  anio: 2022,
+  mes: "Aug",
+  dia: 27,
+  hora: "17:30:00"
 }
 
 const countdown = () => {
@@ -48,20 +48,39 @@ const countdown = () => {
 function initMap() {
   try {
 
+    const lngSalon = -98.9359243;
+    const latSalon = 19.3155926;
+
+    const lngMisa = -98.9500389;
+    const latMisa = 19.3303966;
+
+
     mapboxgl.accessToken = mapBox;
-    const map = new mapboxgl.Map({
-      container: 'mapaCanvas', // container ID
+
+    const mapMisa = new mapboxgl.Map({
+      container: 'mapaSalon', // container ID
       style: 'mapbox://styles/mapbox/streets-v11', // style URL
-      center: [-98.8821499, 19.2674231], // starting position [lng, lat]
+      center: [lngMisa, latMisa], // starting position [lng, lat]
       zoom: 15 // starting zoom
     });
 
-    const marker = new mapboxgl.Marker()
-      .setLngLat([-98.8821499, 19.2674231])
-      .addTo(map);
+    const mapSalon = new mapboxgl.Map({
+      container: 'mapaMisa', // container ID
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [lngSalon, latSalon], // starting position [lng, lat]
+      zoom: 15 // starting zoom
+    });
+
+    const markerSalon = new mapboxgl.Marker()
+      .setLngLat([lngSalon, latSalon])
+      .addTo(mapSalon);
+
+    const markerMisa = new mapboxgl.Marker()
+      .setLngLat([lngMisa, latMisa])
+      .addTo(mapMisa);
 
   } catch (error) {
-
+    console.error(error);
   }
 }
 
@@ -122,7 +141,7 @@ new p5(padrinos);
 
 
 
-document.getElementById("fecha").innerHTML = ` ${fecha.dia + "/" + fecha.mes + "/" + fecha.anio + " a las " + fecha.hora} `;
+document.getElementById("fecha").innerHTML = ` ${fecha.dia + "/" + fecha.mes + "/" + fecha.anio}`;
 initMap();
 countdown();
 

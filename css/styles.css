@@ -8,9 +8,18 @@ body {
 	background: #000 !important; 
 }
 
+ 
+:root{
+	--color: #d29bfd ;
+}
+
 .row {
 	color: #fff !important;
-	text-shadow: 3px 3px 0px #3e44d0;
+    text-shadow: 1px 1px 5px var(--color);
+}
+
+.separador{
+	margin-right: 2rem;
 }
 
 header {
@@ -25,13 +34,16 @@ header {
 #home {
 	background: url(../assets/xv.jpg) no-repeat center center fixed;
 	background-size: cover;
-	background-position: 70%;
-	width: 100vw;
-	height: 100vh;
+	width: 100vw; 
 	opacity: 0.9;
 	margin: 0px !important;
 	border: none !important;
 
+}
+
+.btn-primary{
+	background: var(--color) !important;
+	border: 1px solid var(--color) !important;
 }
 
  
@@ -49,9 +61,10 @@ header {
 }
 
 .navbar a {
-	color: rgb(86, 233, 27);
-	font-size: xx-large;
-	font-family: 'Cookie';
+    color: #fff; 
+    font-size: xx-large;
+    font-family: 'Cookie', sans-serif !important;
+    text-shadow: 2px 2px 5px #240303;
 }
 
 .contenedor {
@@ -81,14 +94,14 @@ h1 {
 }
 
 .reloj .tarjeta {
-	background: rgb(31 51 219 / 60%) !important;
+	background: var(--color) !important;
 	border-radius: 50px;
 	margin: 2px;
 	font-size: 30px;
 
 	padding: 2px;
-	width: 170px;
-	height: 160px;
+	width: 150px;
+	height: 150px;
 	word-wrap: break-word;
 
 	display: flex;
@@ -109,7 +122,7 @@ h1 {
 	-webkit-text-stroke-color: #000000;
 	font-size: 100px;
 	font-family: "Cookie";
-	text-shadow: 6px 1px 10px rgb(66 191 63);
+	text-shadow: 6px 1px 10px var(--color)
 }
 
 section {
@@ -162,7 +175,7 @@ section {
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 3px;
 	/* -webkit-text-stroke-color: #8e2fd6; */
-	text-shadow: 6px 1px 10px rgb(22 72 196);
+	text-shadow: 6px 1px 10px var(--color);
 } 
 
 .flex-container-cajas{
@@ -189,8 +202,8 @@ section {
 }
 
 .caja:hover{
-	transition: 0.5s;
-	color: rgb(48, 204, 48);
+	transition: 0.5s; 
+    color: rgb(243 255 0);
 }
 
 .flex-container-salon{
@@ -213,7 +226,7 @@ section {
 	height: 100%;
 }
 
-#mapaCanvas{
+#mapaMisa, #mapaSalon{
 	width: 400px;
 	height: 400px;
 }
@@ -235,9 +248,9 @@ section {
 	}
 
 	.reloj .tarjeta {
-		font-size: 20px;
-		width: 150px;
-		height: 150px;
+		font-size: 25px;
+		width: 130px;
+		height: 130px;
 	}
 }
 
@@ -257,15 +270,14 @@ section {
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: #000000;
 		font-size: 50px;
-		font-family: "Cookie";
-		text-shadow: 6px 1px 10px rgb(66 191 63);
+		font-family: "Cookie"; 
 	}
 
 	#face{
 		width: 240px;
 	}
 
-	#mapaCanvas{
+	#mapaSalon, #mapaMisa{
 		width: 300px;
 		height: 300px;
 	}
