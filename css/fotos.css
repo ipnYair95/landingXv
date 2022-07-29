@@ -3,20 +3,21 @@
  }
 
 
- .img-container-ella{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ .img-container-ella {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
- 
- .img-ella{
-    border-radius: 25px;
-    width: 300px;
-    height: 450px;
+
+ .img-ella {
+     border-radius: 25px;
+     width: 300px;
+     height: 450px;
  }
 
  .carousel-item img {
+     border-radius: 25px;
      width: 500px;
      height: 300px;
  }
@@ -78,7 +79,7 @@
 
  @media (max-width: 600px) {
      .carousel-item img {
-         width: 250px;
+         width: 280px;
          height: 300px;
      }
  }
