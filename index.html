@@ -25,9 +25,9 @@
 
 <body>
 
-    <audio controls autoplay style="display: none;">
+    <!--  <audio controls autoplay style="display: none;">
         <source src="assets/try.mp3" type="audio/ogg">
-    </audio>
+    </audio> -->
 
 
     <div id="estrellas">
@@ -165,18 +165,24 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/car1.jpg" d-block w-100" alt="...">
+                    <img src="assets/ella/foto2.jpg" d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/car2.jpg" d-block w-100" alt="...">
+                    <img src="assets/ella/foto3.jpg" d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/car3.jpg" d-block w-100" alt="...">
+                    <img src="assets/ella/foto4.jpg" d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/ella/foto5.jpg" d-block w-100">
                 </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -193,6 +199,7 @@
     </section>
 
     <section id="dedicatoria">
+
         <div class="row">
             <h2>
                 <i class="fa fa-heart" aria-hidden="true"></i>
@@ -200,14 +207,16 @@
                 <i class="fa fa-heart" aria-hidden="true"></i>
             </h2>
         </div>
-        <div class="row">
-            <div class="col">
-                <img id="face" src="assets/pose1.jpg" alt="">
+
+        <div class="row p-5">
+            <div class="col-12 col-lg-5 img-container-ella">
+                <img class="img-ella" src="assets/ella/foto1.jpg" alt="">
             </div>
-            <div class="col mt-2" style="text-align: justify;">
+            <div class="col-12 col-lg-7" style="text-align: justify;">
                 <h2> A mis padres y amigos </h2>
                 <br>
-                <h3 style="word-wrap: break-word;"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+                <h3 style="word-wrap: break-word;"> 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
                     eveniet cupiditate, dolores
                     voluptates corrupti facere necessitatibus repellat magnam, maxime voluptatibus rem dignissimos,
                     suscipit quaerat ad! Quod hic nostrum alias exercitationem.
@@ -221,6 +230,7 @@
                 <h3 style="text-align: right;"> <b> - Atentamente: Lorem </b> </h3>
             </div>
         </div>
+
     </section>
 
     <section id="personas">
@@ -233,49 +243,61 @@
             </h2>
         </div>
 
-        <div class="row">
 
-            <div class="flex-container">
+        <div class="flex-card-family">
+            
+            <div class="dash-image-container">
                 <div id="padre" class="foto-fam">
                     <img src="assets/familia/padre.jpg" alt="">
-                    <div class="foto-body mt-2">
-                        <h3 class=""> Mi padre </h3>
-                        <hr>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dolor, maxime quas
-                            magni consequatur commodi impedit. Impedit architecto dolores maiores culpa ex tempore
-                            consectetur! Aut molestias nesciunt voluptatum veritatis eaque? </p>
-                    </div>
                 </div>
+                <div class="body-family" >
+                    <h2> Papá </h2>
+                    <hr>
+                    <p>
+                        Papá, eres un gran padre y me has dado mucho amor, al igual me enseñas los valores, te agradezco
+                        todo los detalles, todo lo que hacías en los días de los reyes, cumpleaños y navidades por verme
+                        feliz, el amor y cariño que me has dado, por todo Gracias, no tengo más palabras para
+                        agradecerte tantas enseñanzas y consejos que me diste de niña y de ahora de adolescente que los
+                        he tomado en cuenta en tantas situaciones de mi vida... TE AMO.
+                    </p>
+                </div>
+            </div>
+
+            <div class="dash-image-container">
                 <div id="madre" class="foto-fam">
                     <img src="assets/familia/madre.jpg" alt="">
-                    <div class="foto-body mt-2">
-                        <h3 class=""> Mi madre </h3>
-                        <hr>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dolor, maxime quas
-                            magni consequatur commodi impedit. Impedit architecto dolores maiores culpa ex tempore
-                            consectetur! Aut molestias nesciunt voluptatum veritatis eaque? </p>
-                    </div>
+                </div>
+                <div class="body-family" >
+                    <h2> Mamá </h2>
+                    <hr>
+                    <p>
+                        Mamá, quiero empezar por agradecerte todo lo que has hecho,por mi y en mi por los regaños y
+                        llamadas de atención, las enseñanzas, y oportunidades que me haz dado , sabes que te amo mucho,
+                        aún que no te lo diga muy seguido por qué lloro , que siempre seré tu bebé aunque tenga 18,20 o
+                        40 , por tanto amor que recibí de pequeña, por entenderme lo sencible y amorosa que soy,solo
+                        Gracias mamá por hacerme este gran sueño realidad.
+                    </p>
                 </div>
             </div>
 
-        </div>
-
-        <div class="row">
-
-            <div class="flex-container" style="height: 800px;">
+            <div class="dash-image-container">
                 <div id="padrinos" class="foto-fam">
                     <img src="assets/familia/padrinos.jpg" alt="">
-                    <div class="foto-body mt-2">
-                        <h3 class=""> Mis padrinos </h3>
-                        <hr>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur dolor, maxime quas
-                            magni consequatur commodi impedit. Impedit architecto dolores maiores culpa ex tempore
-                            consectetur! Aut molestias nesciunt voluptatum veritatis eaque? </p>
-                    </div>
+                </div>
+                <div class="body-family" >
+                    <h2> Padrinos </h2>
+                    <hr>
+                    <p>
+                        Les quiero agradecer por a ver aceptado el compromiso tan grande que es, estar aquí y al querer
+                        ser mis padrinos, Gracias de todo corazón por ayudarme en este día tan especial para mí, y por
+                        cumplir este sueño que deseaba tanto, y todo su esfuerzo que hicieron para este gran día, Muchas
+                        gracias los quiero mil.
+                    </p>
                 </div>
             </div>
 
         </div>
+
     </section>
 
     <section id="gifs">

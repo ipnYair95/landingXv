@@ -1,37 +1,39 @@
 html,
 body {
-	width: 100%;
-	height: 100%;
 	font-family: "Sofia", sans-serif !important;
-	position: relative;
-	overflow-x: hidden;
-	background: #000 !important; 
+	background: #000 !important;
+	max-width: 100%; 
+	overflow-x: hidden !important;
 }
 
 
- 
-:root{
-	--color: #d29bfd ;
+
+:root {
+	--color: rgba(210, 155, 253, 0.6);
+	--color-dark: rgba(210, 155, 253);
 }
 
-.container-fluid{
+
+
+.container-fluid {
 	background: rgb(210 155 253 / 50%) !important;
-    margin-top: -8px !important;
+	margin-top: -8px !important;
 }
-.navbar{
+
+.navbar {
 	background: none !important;
 }
 
-.nav-link:hover{
+.nav-link:hover {
 	color: yellow !important;
 }
 
 .row {
 	color: #fff !important;
-    text-shadow: 1px 1px 5px var(--color);
+	text-shadow: 1px 1px 5px var(--color);
 }
 
-.separador{
+.separador {
 	margin-right: 2rem;
 }
 
@@ -44,22 +46,27 @@ header {
 	justify-content: flex-end;
 	z-index: 10;
 }
+
 #home {
 	background: url(../assets/xv.jpg) no-repeat center center fixed;
 	background-size: cover;
-	width: 100vw; 
+	width: 100vw;
 	opacity: 0.9;
 	margin: 0px !important;
 	border: none !important;
 
 }
 
-.btn-primary{
+.btn-primary {
 	background: var(--color) !important;
 	border: 1px solid var(--color) !important;
 }
 
- 
+.btn-primary:hover {
+	background: var(--color-dark) !important;
+}
+
+
 .navbar {
 	width: 100vw;
 	background: none;
@@ -74,10 +81,10 @@ header {
 }
 
 .navbar a {
-    color: #fff; 
-    font-size: xx-large;
-    font-family: 'Cookie', sans-serif !important;
-    text-shadow: 2px 2px 5px #240303;
+	color: #fff;
+	font-size: xx-large;
+	font-family: 'Cookie', sans-serif !important;
+	text-shadow: 2px 2px 5px #240303;
 }
 
 .contenedor {
@@ -89,6 +96,7 @@ header {
 	align-items: center;
 	padding-top: 80px;
 }
+
 h1 {
 	color: #fff;
 	text-shadow: 1px 1px 2px rgb(255, 255, 255);
@@ -146,8 +154,8 @@ section {
 	align-items: center;
 	margin: 10px;
 	padding: 10px;
-	padding-bottom: 50px;	 
-	border-radius: 10px; 
+	padding-bottom: 50px;
+	border-radius: 10px;
 }
 
 .col {
@@ -178,7 +186,7 @@ section {
 	height: auto;
 }
 
-.mapouter{
+.mapouter {
 	overflow-x: auto !important;
 }
 
@@ -189,9 +197,9 @@ section {
 	-webkit-text-stroke-width: 3px;
 	/* -webkit-text-stroke-color: #8e2fd6; */
 	text-shadow: 6px 1px 10px var(--color);
-} 
+}
 
-.flex-container-cajas{
+.flex-container-cajas {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -199,7 +207,7 @@ section {
 	width: 100%;
 }
 
-.caja{
+.caja {
 	width: 400px;
 	height: 400px;
 	background: rgba(152, 25, 202, 0.5);
@@ -211,15 +219,15 @@ section {
 	flex-direction: column;
 	color: #fff;
 	transition: 0.5s;
-	
+
 }
 
-.caja:hover{
-	transition: 0.5s; 
-    color: rgb(243 255 0);
+.caja:hover {
+	transition: 0.5s;
+	color: rgb(243 255 0);
 }
 
-.flex-container-salon{
+.flex-container-salon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -227,23 +235,24 @@ section {
 	width: 100%;
 }
 
-.flex-container-salon div{
+.flex-container-salon div {
 	margin: 5px;
 	position: relative;
 	width: 400px;
 	height: 400px;
 }
 
-.flex-container-salon div img{
+.flex-container-salon div img {
 	width: 100%;
 	height: 100%;
 }
 
-#mapaMisa, #mapaSalon{
+#mapaMisa,
+#mapaSalon {
 	width: 400px;
 	height: 400px;
 }
- 
+
 
 
 
@@ -251,6 +260,7 @@ section {
 	.navbar {
 		background: rgb(95 121 213 / 30%);
 	}
+
 	body,
 	html {
 		overflow: auto;
@@ -266,6 +276,7 @@ section {
 		height: 130px;
 	}
 }
+
 
 @media (max-width: 600px) {
 	.reloj {
@@ -283,14 +294,11 @@ section {
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: #000000;
 		font-size: 50px;
-		font-family: "Cookie"; 
+		font-family: "Cookie";
 	}
 
-	#face{
-		width: 240px;
-	}
-
-	#mapaSalon, #mapaMisa{
+	#mapaSalon,
+	#mapaMisa {
 		width: 300px;
 		height: 300px;
 	}

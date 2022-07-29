@@ -90,7 +90,7 @@ const padre = (sketch) => {
 
 
   sketch.setup = () => {
-    let m = sketch.createCanvas(320, 320);
+    let m = sketch.createCanvas(250, 300);
     m.parent('padre');
   };
 
@@ -106,7 +106,7 @@ const madre = (sketch) => {
 
 
   sketch.setup = () => {
-    let m = sketch.createCanvas(320, 320);
+    let m = sketch.createCanvas(250, 300);
     m.parent('madre');
   };
 
@@ -122,7 +122,7 @@ const padrinos = (sketch) => {
 
 
   sketch.setup = () => {
-    let m = sketch.createCanvas(320, 320);
+    let m = sketch.createCanvas(250, 300);
     m.parent('padrinos');
   };
 
